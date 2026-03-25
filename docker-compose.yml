@@ -1,0 +1,25 @@
+
+services:
+  
+  api:
+    build: . 
+    container_name: rossmann_api
+    ports:
+      - "8000:8000"
+    command: uvicorn src.api.app:app --host 0.0.0.0 --port 8000
+    volumes:
+      - ./artifacts:/app/artifacts 
+
+
+  frontend:
+    build: . 
+    container_name: rossmann_ui
+    ports:
+      - "8501:8501"
+    command: streamlit run src/ui/dashboard.py --server.address=0.0.0.0
+    environment:
+      - API_URL=http://api:8000/predict 
+    depends_on:
+      - api 
+    volumes:
+      - ./dataset:/app/dataset

@@ -1,0 +1,14 @@
+[2026-03-25 13:46:04,483: INFO: training_pipeline]: ====== TRAINING PIPELINE STARTED ======
+[2026-03-25 13:46:04,483: INFO: data_ingestion]: The data ingestion process has begun.
+[2026-03-25 13:46:04,968: INFO: data_ingestion]: Raw data read successfully. Train size: (1017209, 9), Store size: (1115, 10)
+[2026-03-25 13:46:05,125: INFO: data_ingestion]: Raw data combined successfully. New size: (1017209, 18)
+[2026-03-25 13:46:07,741: INFO: data_ingestion]: Combined raw data saved: dataset\raw\merged_raw.csv
+[2026-03-25 13:46:07,766: INFO: data_transformation]: The transformation process for educational data has begun.
+[2026-03-25 13:46:15,258: INFO: data_transformation]: Processed training data has been saved: dataset\processed\processed_train.csv
+[2026-03-25 13:46:15,269: INFO: model_trainer]: Model training process has started.
+[2026-03-25 13:46:16,347: INFO: model_trainer]: The model is being trained for validation...
+[2026-03-25 13:46:26,379: INFO: model_trainer]: Calculated Dynamic RMSPE Score: %30.79
+[2026-03-25 13:46:26,380: INFO: model_trainer]: For the live production environment, the model is trained with ALL data...
+[2026-03-25 13:46:36,808: INFO: common]: Object successfully registered: artifacts\rossmann_model.pkl
+[2026-03-25 13:46:36,808: ERROR: model_trainer]: An error occurred during model training: 'ModelTrainer' object has no attribute 'metrics_save_path'
+[2026-03-25 13:46:36,808: ERROR: training_pipeline]: The training pipeline failed: 'ModelTrainer' object has no attribute 'metrics_save_path'

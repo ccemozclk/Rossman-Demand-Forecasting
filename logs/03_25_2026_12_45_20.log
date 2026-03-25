@@ -1,0 +1,7 @@
+[2026-03-25 12:48:07,525: INFO: inference_pipeline]: --- New Prediction Request Received --- [Store: 3, Date: 2026-04-23]
+[2026-03-25 12:48:07,525: INFO: data_transformation]: The inference process has begun.
+[2026-03-25 12:48:07,526: INFO: data_transformation]: Retrieving static data from the database: Store 3
+[2026-03-25 12:48:07,526: INFO: data_transformation]: Retrieving historical sales and moving averages from the database: Store 3, Target Date 2026-04-23
+[2026-03-25 12:48:07,526: INFO: data_transformation]: The transformation was successfully completed. The resulting matrix size is: (1, 30)
+[2026-03-25 12:48:08,366: INFO: common]: Object successfully loaded: artifacts\rossmann_model.pkl
+[2026-03-25 12:48:08,444: INFO: inference_pipeline]: Prediction completed successfully. Expected Sales: 4620.04 Euro

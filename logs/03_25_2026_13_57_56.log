@@ -1,0 +1,13 @@
+[2026-03-25 13:57:57,753: INFO: training_pipeline]: ====== TRAINING PIPELINE STARTED ======
+[2026-03-25 13:57:57,754: INFO: data_ingestion]: The data ingestion process has begun.
+[2026-03-25 13:57:58,192: INFO: data_ingestion]: Raw data read successfully. Train size: (1017209, 9), Store size: (1115, 10)
+[2026-03-25 13:57:58,328: INFO: data_ingestion]: Raw data combined successfully. New size: (1017209, 18)
+[2026-03-25 13:58:00,921: INFO: data_ingestion]: Combined raw data saved: dataset\raw\merged_raw.csv
+[2026-03-25 13:58:00,959: INFO: data_transformation]: The transformation process for educational data has begun.
+[2026-03-25 13:58:08,352: INFO: data_transformation]: Processed training data has been saved: dataset\processed\processed_train.csv
+[2026-03-25 13:58:08,363: INFO: model_trainer]: Model training process has started.
+[2026-03-25 13:58:09,426: INFO: model_trainer]: The model is being trained for validation...
+[2026-03-25 13:58:19,854: INFO: model_trainer]: Calculated Dynamic RMSPE Score: %12.83
+[2026-03-25 13:58:19,854: INFO: model_trainer]: For the live production environment, the model is trained with ALL data...
+[2026-03-25 13:58:30,274: INFO: model_trainer]: The model and metrics (metrics.json) have been successfully saved.
+[2026-03-25 13:58:30,348: INFO: training_pipeline]: ====== TRAINING PIPELINE SUCCESSFULLY COMPLETED ======
