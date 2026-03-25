@@ -105,7 +105,7 @@ Rossman-Demand-Forecasting/
 
 - **Stakeholder Transparency:** Translates complex ML metrics into business terms (e.g., displaying "± €850 margin of error" instead of abstract statistical jargon).
 
-# Created by Cem OZCELIK | Data Scientist & Industrial Engineeras
+# Created by Cem OZCELIK | Data Scientist & Industrial Engineer
 
 
 
