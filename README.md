@@ -47,7 +47,7 @@ The system is built on a modern decoupled architecture:
 - **Resilient Inference:** The DataTransformation module safely handles unseen categorical inputs during inference, preventing API crashes in production.
 
 # 📁 Project Structure
-
+```
 Rossman-Demand-Forecasting/
 ├── artifacts/                  # Stores generated model (.pkl) and metrics (.json)
 ├── dataset/
@@ -63,7 +63,7 @@ Rossman-Demand-Forecasting/
 ├── Dockerfile                  # Environment definition
 ├── setup.py                    # Local package installer
 └── requirements.txt            # Python dependencies
-
+````
 # ⚙️ How to Run the Project
 
 - **Method 1:** The Docker Way (Recommended)
